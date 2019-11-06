@@ -1,20 +1,10 @@
 import React from 'react'
+import './Display.css'
 
-
-class Display extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        };
-    }
-    render() {
-        return(
-            <h1>
-                {this.props.number}
-            </h1>
-        )
-    }       
-} 
+const Display = (props) => {
+    return(
+        <div className="screen"><h1>{props.display}</h1></div>
+    )
+}
 
 export default Display
