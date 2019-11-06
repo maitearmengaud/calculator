@@ -18,7 +18,17 @@ concat = (n) => {
   });
 };
 
+equal = () => {
+  this.setState({
+    display : eval(this.state.display)
+  })
+};
 
+clear = () => {
+  this.setState({
+    display : ''
+  })
+}
 
   render() {
     return (
@@ -27,6 +37,8 @@ concat = (n) => {
         <Buttons buttonClick={ this.concat }></Buttons>
         <Operator buttonClick={ this.concat }>+</Operator>
         <Operator buttonClick={ this.concat }>-</Operator>
+        <Operator buttonClick={ this.clear }>C</Operator>
+        <Operator buttonClick={ this.equal }>=</Operator>
       </Fragment>
     );
   }
