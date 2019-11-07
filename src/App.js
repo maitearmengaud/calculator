@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react'
-import './App.css'
+import { eval } from 'mathjs'
 import Display from './components/Display'
 import Buttons from './components/Buttons'
 import Operator from './components/Operator'
 import Clear from './components/Clear'
+import './App.css'
 
 class App extends Component {
   constructor(props) {
