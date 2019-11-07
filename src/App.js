@@ -3,6 +3,7 @@ import './App.css'
 import Display from './components/Display'
 import Buttons from './components/Buttons'
 import Operator from './components/Operator'
+import Clear from './components/Clear'
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +38,7 @@ clear = () => {
         <Buttons buttonClick={ this.concat }></Buttons>
         <Operator buttonClick={ this.concat }>+</Operator>
         <Operator buttonClick={ this.concat }>-</Operator>
-        <Operator buttonClick={ this.clear }>C</Operator>
+        <Clear buttonClick={ this.clear }>C</Clear>
         <Operator buttonClick={ this.equal }>=</Operator>
       </Fragment>
     );
