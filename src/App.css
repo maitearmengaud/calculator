@@ -1,4 +1,26 @@
 /* style for App.js */
-#root {
+.container {
+    margin: 0 auto;
     text-align: center;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right-block {
+ 
+}
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

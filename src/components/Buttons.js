@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 class Buttons extends Component {
     constructor(props){
@@ -22,9 +22,9 @@ class Buttons extends Component {
 
     render() {
         return(
-            <div>
+            <Fragment>
                 {this.buttonsNumbers()}
-            </div>
+            </Fragment>
         )
     }
 }
