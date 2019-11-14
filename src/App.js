@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Display from './components/Display'
 import Buttons from './components/Buttons'
 import Operator from './components/Operator'
-import Clear from './components/Clear'
+import Delete from './components/Delete'
 import * as math from 'mathjs'
 
 import './App.css'
@@ -27,9 +27,21 @@ equal = () => {
   })
 };
 
+round = () => {
+  this.setState({
+    display : math.round(math.e, 5)
+  })
+}
+
 clear = () => {
   this.setState({
     display : ''
+  })
+}
+
+deleteOneNumber = () => {
+  this.setState({
+    display : this.state.display.slice(0, -1)
   })
 }
 
@@ -37,21 +49,28 @@ clear = () => {
     return (
       <Fragment>
         <div className="container">
-          <div className="left-block">
-            <Operator buttonClick={ this.concat }>+</Operator>
-            <Operator buttonClick={ this.concat }>-</Operator>
-            <Operator buttonClick={ this.concat }>x</Operator>
-            <Operator buttonClick={ this.concat }>/</Operator>
-          </div>
-          <div className="right-block">
-            <Display display={ this.state.display }></Display>
+        <Display display={ this.state.display }></Display>
+        <div className="calculator">
             <div className="numbers">
               <Buttons buttonClick={ this.concat }></Buttons>
               <Operator buttonClick={ this.concat }>.</Operator>
-              <Clear buttonClick={ this.clear }>C</Clear>
+              <Operator buttonClick={ this.clear }>C</Operator>
+              </div>  
+          <div className="operators">
+            <Operator buttonClick={ this.concat }>+</Operator>
+            <Operator buttonClick={ this.concat }>-</Operator>
+            <Operator buttonClick={ this.concat }>*</Operator>
+            <Operator buttonClick={ this.concat }>/</Operator>
             </div>
+
           </div>
-          <Operator buttonClick={ this.equal }>=</Operator>
+          <div className="bottom">
+                <Delete buttonClick={ this.deleteOneNumber }></Delete>
+                <div className="equal">
+                  <Operator buttonClick={ this.equal, this.round }>=</Operator>
+                </div>
+              </div>
+
         </div>
       </Fragment>
     );

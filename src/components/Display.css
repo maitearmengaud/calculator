@@ -1,11 +1,11 @@
 /* style for Display.js */
 
 .screen {
-    height: 300px;
+    height: 150px;
 }
 
 .screen h1 {
-    font-size: 3em;
-    padding: 50px 0;
+    font-size: 4em;
     text-align: right;
+    color:#a35638;
 }

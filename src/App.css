@@ -1,26 +1,84 @@
 /* style for App.js */
+body {
+    background-color: #d7c79e;
+}
 .container {
     margin: 0 auto;
     text-align: center;
     max-width: 1200px;
-    width: 80%;
+    width: 60%;
+}
+.calculator {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-}
-.left-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.right-block {
- 
+.operators  {
+    display: flex;
+    flex-direction: column;
+    height: 318px;
+    background: #e08f62;
+    border: 1px solid #d7c79e;
 }
+
+.operators button {
+    background: #e08f62;
+    color: #d7c79e;
+    font-size: 2em;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: none;
+}
+
 .numbers {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 240px;
+}
+
+.numbers button {
+    padding: 15px;
+    background: #a35638;
+    color: #d7c79e;
+    font-size: 2em;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid #d7c79e;
+}
+
+.equal {
+    width: 75%;
+}
+
+.equal button {
+    background:#9dab86;
+    color: #d7c79e;
+    font-size: 2em;
+    height: 80px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #d7c79e;
+}
+
+.delete-button {
+    height: 80px;
+    width: 25%;
+    border: 1px solid #d7c79e;
+    background: url("../src/imgs/delete.png")#a35638 no-repeat center;
+    color: #d7c79e;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 321px;
+    margin: 0 auto;
+    height: 80px;
 }
