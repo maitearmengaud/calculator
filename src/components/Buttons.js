@@ -1,18 +1,13 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 
-class Buttons extends Component {
-    constructor(props){
-        super(props);
-        this.state = {};
-    }
-
-    buttonsNumbers = () => {
+const Buttons = (props) => {
+    function  buttonsNumbers () {
         const buttons = []
         for(let i=0; i < 10; i++){
             buttons.push(
                 <button 
                 key={i}
-                onClick = {() => this.props.buttonClick(i)}
+                onClick = {() => props.buttonClick(i)}
                 >
                 {i}
                 </button>
@@ -20,13 +15,12 @@ class Buttons extends Component {
         return buttons
     }
 
-    render() {
-        return(
-            <Fragment>
-                {this.buttonsNumbers()}
-            </Fragment>
-        )
-    }
+    return(
+        <Fragment>
+            {buttonsNumbers()}
+        </Fragment>
+    )
 }
+
 
 export default Buttons
