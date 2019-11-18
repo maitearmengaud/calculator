@@ -13,12 +13,8 @@ function App(props) {
     setDisplay(display + n);
   }
   function equal() {
-    setDisplay(math.evaluate(display));
-    // setDisplay(math.round(math.e, 5));
+    setDisplay(math.round(math.evaluate(display),5));
   }
-  // function round() {
-  //   setDisplay(math.round(math.e, 5));
-  // }
   function clear() {
     setDisplay('');
   }
@@ -29,26 +25,26 @@ function App(props) {
     return (
       <Fragment>
         <div className="container">
-        <Display display={ display }></Display>
-        <div className="calculator">
-            <div className="numbers">
-              <Buttons buttonClick={ concat }></Buttons>
-              <Operator buttonClick={ concat }>.</Operator>
-              <Operator buttonClick={ clear }>C</Operator>
+          <Display display={ display }></Display>
+          <div className="calculator">
+              <div className="numbers">
+                <Buttons buttonClick={ concat }></Buttons>
+                <Operator buttonClick={ concat }>.</Operator>
+                <Operator buttonClick={ clear }>C</Operator>
               </div>  
-          <div className="operators">
-            <Operator buttonClick={ concat }>+</Operator>
-            <Operator buttonClick={ concat }>-</Operator>
-            <Operator buttonClick={ concat }>*</Operator>
-            <Operator buttonClick={ concat }>/</Operator>
-            </div>
+              <div className="operators">
+                <Operator buttonClick={ concat }>+</Operator>
+                <Operator buttonClick={ concat }>-</Operator>
+                <Operator buttonClick={ concat }>*</Operator>
+                <Operator buttonClick={ concat }>/</Operator>
+              </div>
           </div>
           <div className="bottom">
-                <Delete buttonClick={ deleteOneNumber }></Delete>
+              <Delete buttonClick={ deleteOneNumber }></Delete>
                 <div className="equal">
-                  <Operator buttonClick={ equal }>=</Operator>
+                  <Operator buttonClick={equal} >=</Operator>
                 </div>
-              </div>
+          </div>
         </div>
       </Fragment>
     );

@@ -2,6 +2,8 @@
 
 .screen {
     height: 150px;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .screen h1 {
