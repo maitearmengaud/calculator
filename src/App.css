@@ -1,6 +1,6 @@
 /* style for App.js */
 body {
-    background-color: #d7c79e;
+    background-color: #022c43;
 }
 
 .container {
@@ -23,12 +23,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 318px;
-    background: #e08f62;
-    border: 1px solid #d7c79e;
+    background: #115173;
+    border: 1px solid #022c43;
 }
 
 .operators button {
-    background: #e08f62;
+    background: #115173;
     color: #d7c79e;
     font-size: 2em;
     width: 80px;
@@ -48,13 +48,13 @@ body {
 
 .numbers button {
     padding: 15px;
-    background: #a35638;
+    background: #053f5e;
     color: #d7c79e;
     font-size: 2em;
     width: 80px;
     height: 80px;
     padding: 5px;
-    border: 1px solid #d7c79e;
+    border: 1px solid #022c43;
 }
 
 .equal {
@@ -62,20 +62,20 @@ body {
 }
 
 .equal button {
-    background:#9dab86;
-    color: #d7c79e;
+    background:#ffd700;
+    color: #022c43;
     font-size: 2em;
     height: 80px;
     width: 100%;
     border-bottom-right-radius: 20px;
-    border: 1px solid #d7c79e;
+    border: 1px solid #022c43;
 }
 
 .delete-button {
     height: 80px;
     width: 25%;
-    border: 1px solid #d7c79e;
-    background: url("../src/imgs/delete.png")#a35638 no-repeat center;
+    border: 1px solid #022c43;
+    background: url("../src/imgs/delete.png")#d7c79e no-repeat center;
     color: #d7c79e;
     border-bottom-left-radius: 20px;
 }
