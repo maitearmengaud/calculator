@@ -3,11 +3,11 @@
 .screen {
     height: 150px;
     width: 320px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 .screen h1 {
-    font-size: 4em;
+    font-size: 3em;
     text-align: right;
     color:#a35638;
 }
