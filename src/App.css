@@ -77,8 +77,8 @@ body {
     height: 80px;
     width: 25%;
     border: 1px solid #022c43;
-    background: url("../src/imgs/delete.png")#d7c79e no-repeat center;
     color: #d7c79e;
+    background: #115173;
     border-bottom-left-radius: 20px;
     background-size: 50%;
 }

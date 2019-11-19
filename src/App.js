@@ -4,6 +4,7 @@ import Buttons from './components/Buttons'
 import Operator from './components/Operator'
 import Delete from './components/Delete'
 import * as math from 'mathjs'
+import { FiDelete } from 'react-icons/fi'
 import './App.css'
 
 
@@ -40,7 +41,7 @@ function App(props) {
               </div>
           </div>
           <div className="bottom">
-              <Delete buttonClick={ deleteOneNumber }></Delete>
+              <Delete buttonClick={ deleteOneNumber }><FiDelete size={20} /></Delete>
                 <div className="equal">
                   <Operator buttonClick={equal} >=</Operator>
                 </div>
