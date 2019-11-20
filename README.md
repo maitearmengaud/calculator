@@ -6,7 +6,7 @@ Projet personnel réalisé dans le cadre de ma formation à la Wild Code School.
 ## Built With
 * [react] (https://fr.reactjs.org/)
 * [mathjs] (https://mathjs.org/index.html)
-* [react-icons] (https://reactstrap.github.io/)
+* [react-icons] (https://react-icons.netlify.com/#/)
 
 ## Versioning
 
