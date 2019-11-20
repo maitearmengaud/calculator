@@ -1,6 +1,6 @@
 # Calculator
 
-Projet personel réalisé dans le cadre de ma formation à la Wild Code School. 
+Projet personnel réalisé dans le cadre de ma formation à la Wild Code School. 
 
 
 ## Built With
