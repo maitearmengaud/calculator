@@ -1,6 +1,6 @@
 # Calculator
 
-Projet personnel réalisé dans le cadre de ma formation à la Wild Code School. 
+Projet personnel réalisé dans le cadre de ma formation à la Wild Code School afin de mettre en pratique les hooks de ReactJS.
 
 
 ## Built With
