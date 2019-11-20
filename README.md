@@ -10,7 +10,7 @@ Projet personel réalisé dans le cadre de ma formation à la Wild Code School.
 
 ## Versioning
 
-Version disponnible sur ce lien [calculator](https://codesandbox.io/s/github/Ma-ho/calculator). 
+Version disponible sur ce lien [calculator](https://codesandbox.io/s/github/Ma-ho/calculator). 
 
 ## Authors
 
